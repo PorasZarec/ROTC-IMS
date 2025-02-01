@@ -1,0 +1,75 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/global.scss";
+
+
+
+
+
+
+
+
+.footer {
+    background-color: $text-dark;
+}   
+
+
+.footer__container {
+    display: grid;
+    gap: 4rem 2rem;
+}
+
+
+.footer__col .section__description {
+    margin-block: 1.5rem;
+    text-align: center;
+}
+
+.footer__col h4 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $white;
+}
+
+.footer__links {
+    text-align: center;
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.footer__links a {
+    color: $text-light;
+    transition: 0.3s;
+}
+
+.footer__links a:hover ,#footer-description:hover{
+    color: $white;
+}
+
+.footer__socials {
+    justify-content: center;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer__socials img {
+    max-width: 25px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.footer__socials img:hover {
+    opacity: 1;
+}
+
+.footer__bar {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: $text-light;
+    text-align: center;
+}

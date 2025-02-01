@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+@import '../../styles/global.scss';
+@import '../login/login.scss';
+
+// Add any Register-specific styles here
+
+@media screen and (max-width: 602px) {
+    .registerPage {
+        .container {
+            .videoDiv {
+                .textDiv {
+                    .title {
+                        font-size: 20px;
+                        &::after {
+                            content: "ROTC";
+                            display: block;
+                        }
+                        // Hide the original text on mobile
+                        > :first-child {
+                            display: none;
+                        }
+                    }
+
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
